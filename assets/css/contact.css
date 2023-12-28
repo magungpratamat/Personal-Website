@@ -1,0 +1,33 @@
+.label-style {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.input-style {
+  padding: 5px;
+  background-color: #f4f3f3;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+}
+.title-form {
+  text-align: center;
+  font-weight: 900;
+}
+
+.btn-submit {
+  padding: 5px 15px;
+  background-color: #111727;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  width: 100px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  display: block;
+}
+
+.btn-submit:hover{
+    cursor:pointer;
+}

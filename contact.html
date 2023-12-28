@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar-ul">
+        <div class="navbar-left">
+          <li>
+            <img src="./assets/img/dumbwayslogo.png" class="navbar-logo" />
+          </li>
+          <li>
+            <a href="index.html" class="navbar-link"> Home </a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link"> Blog </a>
+          </li>
+        </div>
+        <div class="navbar-right">
+          <li>
+            <a href="contact.html" class="navbar-contact-btn"> Contact Me</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div
+      style="
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          justify-content: center;
+          margin-top: 80px;
+        "
+      >
+        <h3 class="title-form">GET IN TOUCH</h3>
+        <label class="label-style" for="name">Name</label>
+        <input class="input-style" id="name" />
+        <label class="label-style" for="email">Email</label>
+        <input class="input-style" id="email" />
+        <label class="label-style" for="phoneNumber">Phone Number</label>
+        <input class="input-style" id="phoneNumber" />
+        <label class="label-style" for="subject">Subject</label>
+        <select class="input-style" id="subject">
+          <option>Frontend Developer</option>
+          <option>Backend Developer</option>
+          <option>Fullstack Developer</option>
+        </select>
+        <label class="label-style" for="message">Your message</label>
+        <textarea class="input-style" id="message"></textarea>
+        <div style="width: 100%;">
+          <button class="btn-submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
