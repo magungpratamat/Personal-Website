@@ -1,3 +1,18 @@
+.form-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
 .label-style {
   font-weight: 600;
   font-size: 15px;
@@ -28,6 +43,6 @@
   display: block;
 }
 
-.btn-submit:hover{
-    cursor:pointer;
+.btn-submit:hover {
+  cursor: pointer;
 }
