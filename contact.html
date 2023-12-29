@@ -37,7 +37,7 @@
         margin-top: 20px;
       "
     >
-      <div
+      <form
         style="
           display: flex;
           flex-direction: column;
@@ -45,6 +45,7 @@
           justify-content: center;
           margin-top: 80px;
         "
+        onsubmit="submitData(event)"
       >
         <h3 class="title-form">GET IN TOUCH</h3>
         <label class="label-style" for="name">Name</label>
@@ -59,12 +60,13 @@
           <option>Backend Developer</option>
           <option>Fullstack Developer</option>
         </select>
-        <label class="label-style" for="message">Your message</label>
-        <textarea class="input-style" id="message"></textarea>
-        <div style="width: 100%;">
-          <button class="btn-submit">Submit</button>
+        <label class="label-style" for="massage">Your massage</label>
+        <textarea class="input-style" id="massage"></textarea>
+        <div style="width: 100%">
+          <button class="btn-submit" onclick="submitData(event)">Submit</button>
         </div>
-      </div>
+      </form>
     </div>
+    <script src="./assets/js/contact.js"></script>
   </body>
 </html>
