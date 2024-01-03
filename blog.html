@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar-ul">
+        <div class="navbar-left">
+          <li>
+            <img src="./assets/img/dumbwayslogo.png" class="navbar-logo" />
+          </li>
+          <li>
+            <a href="index.html" class="navbar-link"> Home </a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link active"> Blog </a>
+          </li>
+        </div>
+        <div class="navbar-right">
+          <li>
+            <a href="contact.html" class="navbar-contact-btn"> Contact Me</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <!-- blog -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>Add My Project</h1>
+            <div>
+              <label for="input-project-name">Project Name</label>
+              <input id="input-project-name" />
+            </div>
+            <div class="date">
+              <div class="date-start">
+                <label for="start">Start Date</label>
+                <input type="date" id="start" />
+              </div>
+              <div class="date-end">
+                <label for="end">End Date</label>
+                <input type="date" id="end" />
+              </div>
+            </div>
+            <div>
+              <label for="description">Description</label>
+              <textarea id="description"></textarea>
+            </div>
+            <h3>Technologies</h3>
+            <div class="checkbox-container">
+              <div class="check">
+                <input type="checkbox" id="nodejs" value="node js" />
+                <label for="nodejs">node js</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" id="python" value="node js" />
+                <label for="python">python</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" id="php" value="node js" />
+                <label for="php">php</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" id="golang" value="node js" />
+                <label for="golang">golang</label>
+              </div>
+            </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Choose</p>
+                  <img src="./assets/icon/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end -->
+    </div>
+    <!-- blog my project -->
+    <section class="blog-my-project">
+      <div class="container-project">
+        <div class="intro">
+          <h2>My Project</h2>
+        </div>
+        <div class="blog-cards">
+          <!-- <div class="card">
+            <div class="container-img">
+              <img
+                src="https://source.unsplash.com/360x200?programming"
+                alt="Programming"
+              />
+            </div>
+            <div class="card-content">
+              <div class="container-content">
+                <a href="#">Tips Belajar Programming</a>
+                <p>Durasi:3bulan</p>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Laudantium ex voluptatibus sunt maxime nemo quae minus vel
+                    ullam quod aperiam!
+                  </p>
+                </div>
+                <div class="gabung-submit">
+                  <div class="submit-project">
+                    <button>Edit</button>
+                  </div>
+                  <div class="submit-project">
+                    <button>Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/blog.js"></script>
+  </body>
+</html>
