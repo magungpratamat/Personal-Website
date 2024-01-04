@@ -105,17 +105,17 @@ function calculateDuration(createdAt, endDate) {
   let resultDuration = "";
 
   if (years > 0) {
-    resultDuration += years + (years === 1 ? " year" : " years ago");
+    resultDuration += years + (years === 1 ? " year" : " years");
   } else if (months > 0) {
-    resultDuration += months + (months === 1 ? " month" : " months ago");
+    resultDuration += months + (months === 1 ? " month" : " months");
   } else if (days > 0) {
-    resultDuration += days + (days === 1 ? " day" : " days ago");
+    resultDuration += days + (days === 1 ? " day" : " days");
   } else if (hours > 0) {
-    resultDuration += hours + (hours === 1 ? " hour" : " hours ago");
+    resultDuration += hours + (hours === 1 ? " hour" : " hours");
   } else if (minutes > 0) {
-    resultDuration += minutes + (minutes === 1 ? " minute" : " minutes ago");
+    resultDuration += minutes + (minutes === 1 ? " minute" : " minutes");
   } else {
-    resultDuration += seconds + (seconds === 1 ? " second" : " seconds ago");
+    resultDuration += seconds + (seconds === 1 ? " second" : " seconds");
   }
 
   return resultDuration;

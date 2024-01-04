@@ -1,0 +1,93 @@
+/* Blog Detail */
+.blog-detail {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-detail-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 150px;
+}
+
+.blog-detail-up {
+  display: flex;
+}
+.blog-detail-left {
+  width: 50%;
+  margin-right: 70px;
+}
+
+.blog-detail-left img {
+  width: 100%;
+  height: 350px;
+}
+
+.blog-detail-right {
+}
+
+.blog-detail-right .duration {
+  margin-bottom: 30px;
+}
+
+.blog-detail-right .duration p {
+  font-weight: 600;
+}
+
+.icon-container-d {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container-d span {
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.icon div {
+  margin-bottom: 10px;
+}
+
+.icon-container-t {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.icon-container-t span {
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.icon div {
+  margin: 10px 10px 10px 0;
+}
+
+.blog-detail-right .technologies p {
+  font-weight: 600;
+}
+
+.blog-detail-down{
+  margin-top:40px;
+}
+
+.blog-detail h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 120%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.blog-detail-down p {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: justify;
+}
