@@ -45,7 +45,7 @@ body {
 .bio p {
   margin-bottom: 20px;
   padding-right: 50px;
-  text-align: justify;
+  text-align: justify; 
 }
 .bio .btn-contact:hover {
   cursor: pointer;
@@ -100,4 +100,28 @@ body {
   text-align: center;
   margin: 5px 0 10px;
   font-size: 15px;
+}
+@media only screen and (max-width: 576px) {
+  .container{
+    display:flex;
+    flex-direction:column;
+    width:75%;
+  }
+  .social-media{
+   display:flex;
+   justify-content: center; 
+  }
+  .aside-card{
+    display:flex;
+    justify-content: center;
+  }
+  .bio h1{
+    font-weight:700; 
+    text-align: center; 
+  }
+  .bio p {
+    margin-bottom: 20px;
+    padding-right: 0px;
+    text-align: justify; 
+  }
 }

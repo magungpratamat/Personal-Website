@@ -1,8 +1,11 @@
+/* ////////////////////////////////////////////////////////////////// */
+/* container navbar-ul  */
 .navbar {
   background-color: #f4f3f3;
   padding: 20px 60px;
 }
 
+/* container navbar-left and navbar-right */
 .navbar-ul {
   display: flex;
   list-style: none;
@@ -10,26 +13,31 @@
   align-items: center;
 }
 
+/* container navbar list: home,blog,contact me */
 .navbar-left {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
+/* this a tag */
 .navbar-link {
   text-decoration: none;
   color: black;
 }
 
+/* active class for the case where the page is located */
 .active {
   color: #111727;
-  font-weight:bold;
+  font-weight: bold;
 }
 
+/* leftmost list as logo */
 .navbar-logo {
   width: 50px;
 }
 
+/* rightmost list as button contact me */
 .navbar-contact-btn {
   padding: 10px 30px;
   background-color: #111727;
@@ -40,6 +48,54 @@
   border-radius: 10px;
   margin-top: 20px;
   text-decoration: none;
-  font-size:15px;
+  font-size: 15px;
+}
+/* ////////////////////////////////////////////////////////////////// */
+
+/* display that is hidden when the screen is above 576 px */
+#hamburger-button {
+  display: none;
 }
 
+/* the display that appears when the screen is 576px */
+/*container hamburger icon */
+.hamburger-navbar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+
+/*this is the a tag that was removed and then popped up */
+.hamburger-navbar-link {
+  display: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+/* to hide the display */
+.hidden {
+  display: none;
+}
+
+/* css that will only change the display on 567px screens */
+@media only screen and (max-width: 576px) {
+  .navbar-link {
+    display: none;
+  }
+
+  .navbar-contact-btn {
+    display: none;
+  }
+
+  .hamburger-navbar-link {
+    display: block;
+  }
+
+  #hamburger-button {
+    display: block;
+  }
+}

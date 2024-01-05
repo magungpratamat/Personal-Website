@@ -21,18 +21,34 @@
             <img src="./assets/img/dumbwayslogo.png" class="navbar-logo" />
           </li>
           <li>
-            <a href="index.html" class="navbar-link"> Home </a>
+            <a href="index.html" class="navbar-link active"> Home </a>
           </li>
           <li>
-            <a href="#" class="navbar-link active"> Blog </a>
+            <a href="./blog.html" class="navbar-link"> Blog </a>
           </li>
         </div>
         <div class="navbar-right">
           <li>
             <a href="contact.html" class="navbar-contact-btn"> Contact Me</a>
           </li>
+          <i
+            class="fa-solid fa-bars fa-2x"
+            style="cursor: pointer"
+            id="hamburger-button"
+            onclick="openHamburger()"
+          ></i>
         </div>
       </ul>
+      <div
+        id="hamburger-navbar-container"
+        class="hamburger-navbar-container hidden"
+      >
+        <a class="hamburger-navbar-link hamburger-active" href="index.html"
+          >Home</a
+        >
+        <a class="hamburger-navbar-link" href="blog.html">Blog</a>
+        <a class="hamburger-navbar-link" href="contact.html">Contact Me</a>
+      </div>
     </nav>
     <!-- blog -->
     <div class="blog">
@@ -102,7 +118,7 @@
           <h2>My Project</h2>
         </div>
         <div class="blog-cards">
-          <!-- <div class="card">
+          <div class="card">
             <div class="container-img">
               <img
                 src="https://source.unsplash.com/360x200?programming"
@@ -130,10 +146,98 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
+          <div class="card">
+            <div class="container-img">
+              <img
+                src="https://source.unsplash.com/360x200?programming"
+                alt="Programming"
+              />
+            </div>
+            <div class="card-content">
+              <div class="container-content">
+                <a href="#">Tips Belajar Programming</a>
+                <p>Durasi:3bulan</p>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Laudantium ex voluptatibus sunt maxime nemo quae minus vel
+                    ullam quod aperiam!
+                  </p>
+                </div>
+                <div class="gabung-submit">
+                  <div class="submit-project">
+                    <button>Edit</button>
+                  </div>
+                  <div class="submit-project">
+                    <button>Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="container-img">
+              <img
+                src="https://source.unsplash.com/360x200?programming"
+                alt="Programming"
+              />
+            </div>
+            <div class="card-content">
+              <div class="container-content">
+                <a href="#">Tips Belajar Programming</a>
+                <p>Durasi:3bulan</p>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Laudantium ex voluptatibus sunt maxime nemo quae minus vel
+                    ullam quod aperiam!
+                  </p>
+                </div>
+                <div class="gabung-submit">
+                  <div class="submit-project">
+                    <button>Edit</button>
+                  </div>
+                  <div class="submit-project">
+                    <button>Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="container-img">
+              <img
+                src="https://source.unsplash.com/360x200?programming"
+                alt="Programming"
+              />
+            </div>
+            <div class="card-content">
+              <div class="container-content">
+                <a href="#">Tips Belajar Programming</a>
+                <p>Durasi:3bulan</p>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Laudantium ex voluptatibus sunt maxime nemo quae minus vel
+                    ullam quod aperiam!
+                  </p>
+                </div>
+                <div class="gabung-submit">
+                  <div class="submit-project">
+                    <button>Edit</button>
+                  </div>
+                  <div class="submit-project">
+                    <button>Delete</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <script src="./assets/js/blog.js"></script>
+    <!-- <script src="./assets/js/blog.js"></script> -->
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>
