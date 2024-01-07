@@ -1,28 +1,40 @@
+/* Main container for the blog */
+.blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Blog Form */
 .blog-form {
   padding: 50px 0;
   display: flex;
-  flex-direction: colomn;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
   justify-content: center;
 }
 
 .blog-form .form-container {
   width: 500px;
+  text-align: center; /* Center text within the container */
 }
 
-.blog-form .form-container h1 {
+.blog-form form h1 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .blog-form form label {
-  font-size: 15px;
-  font-weight: 500;
+  display: block; /* Ensure labels are displayed on a new line */
+  text-align: left; /* Align labels to the left */
+  font-weight: 600;
+  margin: 10px 0;
 }
 
 .blog-form form input,
-textarea,
-select {
+.blog-form form textarea,
+.blog-form form select {
   width: 100%;
   font-size: 15px;
   font-weight: 400;
@@ -32,7 +44,9 @@ select {
   background: #f4f3f3;
   border: 1px solid #c4c4c4;
   border-radius: 8px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
 }
+
 .blog-form .date {
   display: flex;
   margin-bottom: 15px;
@@ -47,31 +61,40 @@ select {
   flex: 1; /* Menggunakan flex untuk mengatur lebar */
 }
 
+.form-container h3 {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+}
 /* checkbox */
 
 .checkbox-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 400px;
 }
-
-.form-container h3 {
-  font-size: 15px;
-  font-weight: 500;
-}
-
 .checkbox-container .check {
-  width: 48%;
+  display: flex;
+  align-items: center;
+  width: 200px;
 }
+
 .checkbox-container .check label {
   font-size: 15px;
   font-weight: 300;
+  margin: 0 0 10px 0;
 }
 
 .checkbox-container .check input {
   width: 20px;
+  margin: 0 0 10px 0;
 }
+
+.check input {
+  margin-right: 10px; /* Adjust as needed for spacing between checkbox and label */
+}
+
 .date label {
   margin-right: 10px;
   text-align: right;
@@ -131,13 +154,10 @@ select {
 .blog-my-project {
   background-color: #f3f4f6;
   color: #111827;
-  height: 100vh; /* Set the height to 100% of the viewport height */
-  overflow: hidden; /* Optional: to prevent scrolling if content overflows */
 }
 
 .container-project {
   width: 100%;
-  max-width: none; /* Remove max-width constraint */
 }
 
 .intro {
@@ -152,23 +172,6 @@ select {
   display: inline-block; /* Ensures text-align works properly */
 }
 
-/* Blog Cards Container */
-/* Blog Cards Container */
-.blog-cards {
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Individual Card Styles */
-/* Blog Cards Container */
-.blog-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 /* Individual Card Styles */
 .card {
   width: 20%;
@@ -176,16 +179,16 @@ select {
   margin-bottom: 20px; /* Adjust margin as needed */
 }
 
-/* Card Image Styles */
-/* Blog Cards Container */
+/* container cards */
 .blog-cards {
   width: 1000px;
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto; 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height:auto;
 }
-/* Individual Card Styles */
+
 .card {
   width: 300px; /* Adjust as needed */
   padding: 15px;
@@ -200,36 +203,25 @@ select {
   width: 100%;
 }
 
-/* Card Image Styles */
 .card .container-img img {
   width: 100%;
   height: 250px;
   border-radius: 10px;
 }
 
-/* Card Content Styles */
 .card-content {
   width: 100%;
 }
-
-/* Card Title Styles */
-/* .card-content h3 {
-  margin-top: 0;
-} */
 
 .container-content {
   text-align: left;
 }
 
-/* Card Read More Link Styles */
 .card-content .container-content a {
   display: inline-block;
   text-decoration: none;
   color: #1f2937;
   font-weight: 700;
-}
-
-.container-content p {
 }
 
 .container-content .description p {
@@ -272,7 +264,29 @@ select {
   background-color: #0056b3; /* Darker shade on hover */
 }
 
-/* Media Query for Smaller Screens */
 @media only screen and (max-width: 576px) {
- 
+  .blog-form .form-container {
+    width: 100%; /* Adjust the width for small screens */
+    padding: 0 15px; /* Adjust padding as needed */
+  }
+
+  .checkbox-container {
+    width: 100%; /* Full width for small screens */
+    justify-content: center; /* Center checkboxes on small screens */
+  }
+
+  .checkbox-container .check {
+    width: 100%; /* Full width for each checkbox on small screens */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+
+  .blog-cards {
+    width: 100%; /* Full width for small screens */
+    justify-content: center; /* Center the cards on small screens */
+  }
+
+  .card {
+    width: 60%; /* Full width for each card on small screens */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
 }
