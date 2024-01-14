@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog bootstrap</title>
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo.png" alt="logo-dumbways" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./homeBs.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./blogBs.html"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./testimonialBs.html">Testimonial</a>
+            </li>
+          </ul>
+        </div>
+        <a href="./contactBs.html"
+          ><button type="button" class="btn btn-dark">Contact Me</button></a
+        >
+      </div>
+    </nav>
+    <!-- Blog -->
+    <div class="d-flex justify-content-center mx-auto w-50 pt-5 pb-5">
+      <form onsubmit="addBlog(event)">
+        <h1 class="text-center">Add My Project</h1>
+        <!-- project name -->
+        <div class="mb-3">
+          <label for="input-project-name" class="form-label fw-bold"
+            >Project Name</label
+          >
+          <input type="text" class="form-control" id="input-project-name" />
+        </div>
+        <!-- start - end project -->
+        <div class="row">
+          <div class="col">
+            <label for="start" class="form-label fw-bold">Start</label>
+            <input
+              id="start"
+              type="date"
+              class="form-control"
+              placeholder="Start project"
+              aria-label="Start project"
+            />
+          </div>
+          <div class="col">
+            <label for="end" class="form-label fw-bold">End</label>
+            <input
+              id="end"
+              type="date"
+              class="form-control"
+              placeholder="End project"
+              aria-label="End project"
+            />
+          </div>
+        </div>
+        <!-- Text Area -->
+        <div class="mb-3">
+          <label for="description" class="form-label fw-bold mt-3"
+            >Description</label
+          >
+          <textarea class="form-control" id="description" rows="3"></textarea>
+        </div>
+        <!-- technologies -->
+        <h5 class="">Technologies</h5>
+        <!-- checkbox technologies -->
+        <!-- container checkbox technologies -->
+
+        <div
+          class="d-flex flex-wrap justify-content-between"
+          style="width: 250px"
+        >
+          <!--checkbox node js -->
+          <div class="mb-3 form-check me-4">
+            <input type="checkbox" class="form-check-input" id="nodejs" />
+            <label class="form-check-label" for="nodejs">node js</label>
+          </div>
+          <!--checkbox python -->
+          <div class="mb-3 form-check me-4">
+            <input type="checkbox" class="form-check-input" id="python" />
+            <label class="form-check-label" for="python">python</label>
+          </div>
+          <!--checkbox php -->
+          <div class="mb-3 form-check me-4">
+            <input type="checkbox" class="form-check-input" id="php" />
+            <label class="form-check-label" for="php">php</label>
+          </div>
+          <!--checkbox golang -->
+          <div class="mb-3 form-check me-4">
+            <input type="checkbox" class="form-check-input" id="golang" />
+            <label class="form-check-label" for="golang">golang</label>
+          </div>
+        </div>
+        <!-- up image -->
+        <div class="mb-3">
+          <label for="input-blog-image" class="form-label fw-bold"
+            >Upload Image</label
+          >
+          <input class="form-control" type="file" id="input-blog-image" />
+        </div>
+        <!-- button submit -->
+        <button type="submit" class="btn btn-primary float-end">Submit</button>
+      </form>
+    </div>
+    <!-- blog my project -->
+    <section class="blog-my-project bg-info">
+      <div class="container-project">
+        <div class="intro text-center p-2">
+          <h2>My Project</h2>
+        </div>
+        <div class="blog-cards"></div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/blog.js"></script>
+  </body>
+</html>
