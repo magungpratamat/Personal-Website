@@ -1,0 +1,26 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "belajar express ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magungpratamat/Personal-Website.git"
+  },
+  "author": "pratama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magungpratamat/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/magungpratamat/Personal-Website#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
