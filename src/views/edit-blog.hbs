@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+    <link rel="stylesheet" href="/assets/css/nav.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar-ul">
+        <div class="navbar-left">
+          <li>
+            <img src="/assets/img/dumbwayslogo.png" class="navbar-logo" />
+          </li>
+          <li>
+            <a href="/" class="navbar-link"> Home </a>
+          </li>
+          <li>
+            <a href="/add-blog" class="navbar-link active"> Blog </a>
+          </li>
+          <li>
+            <a href="/testimonial" class="navbar-link"> Testimonial </a>
+          </li>
+        </div>
+        <div class="navbar-right">
+          <li>
+            <a href="/contact" class="navbar-contact-btn"> Contact Me</a>
+          </li>
+          <i
+            class="fa-solid fa-bars fa-2x"
+            style="cursor: pointer"
+            id="hamburger-button"
+            onclick="openHamburger()"
+          ></i>
+        </div>
+      </ul>
+      <div
+        id="hamburger-navbar-container"
+        class="hamburger-navbar-container hidden"
+      >
+        <a
+          class="hamburger-navbar-link hamburger-active"
+          href="index.html"
+        >Home</a>
+        <a class="hamburger-navbar-link" href="blog.html">Blog</a>
+        <a class="hamburger-navbar-link" href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <!-- blog -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form action="/edit-blog/{{id}}" method="POST">
+            <h1>Edit My Project</h1>
+            <div>
+              <label for="input-project-name">Project Name</label>
+              <input id="input-project-name" name="title" value="{{data.title}}" />
+            </div>
+            <div class="date">
+              <div class="date-start">
+                <label for="start">Start Date</label>
+                <input type="date" id="start" />
+              </div>
+              <div class="date-end">
+                <label for="end">End Date</label>
+                <input type="date" id="end" />
+              </div>
+            </div>
+            <div>
+              <label for="description">Description</label>
+              <textarea id="description" name="content">{{data.content}}</textarea>
+            </div>
+            <h3>Technologies</h3>
+            <div class="checkbox-container">
+              <div class="check">
+                <input type="checkbox" id="nodejs" value="node js" />
+                <label for="nodejs">node js</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" id="python" value="node js" />
+                <label for="python">python</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" id="php" value="node js" />
+                <label for="php">php</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" id="golang" value="node js" />
+                <label for="golang">golang</label>
+              </div>
+            </div>
+            <dix>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Choose</p>
+                  <img src="/assets/icon/file.png" alt="file" />
+                </label>
+                <input name="img" type="file" id="input-blog-image" hidden />
+              </div>
+            </dix>
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+    <script src="./assets/js/nav.js"></script>
+  </body>
+</html>

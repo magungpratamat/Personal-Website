@@ -64,7 +64,9 @@ function renderBlog() {
       </div>
       <div class="card-content">
         <div class="container-content">
-          <a href="blog-detail.html" target="_blank">${blogs[index].projectName}</a>
+          <a href="blog-detail.html" target="_blank">${
+            blogs[index].projectName
+          }</a>
           <p>${calculateDuration(
             blogs[index].createdAt,
             blogs[index].endDate
@@ -121,9 +123,10 @@ function calculateDuration(createdAt, endDate) {
   return resultDuration;
 }
 
-renderBlog();
+// renderBlog();
 
 // Uncomment the following lines if you want to periodically update the blogs
 // setInterval(() => {
 //   renderBlog();
 // }, 1000);
+module.exports = { calculateDuration };
