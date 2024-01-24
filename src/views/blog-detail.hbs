@@ -52,11 +52,11 @@
     </nav>
     <!-- blog detail -->
     <div class="blog-detail">
-      <h1>{{data.title}}</h1>
+      <h1>{{dataDetail.title}}</h1>
       <div class="blog-detail-container">
         <div class="blog-detail-up">
           <div class="blog-detail-left">
-            <img src="/assets/img/{{data.img}}" alt="detail" />
+            <img src="/assets/img/{{dataDetail.img}}" alt="detail" />
           </div>
           <div class="blog-detail-right">
             <div class="duration">
@@ -76,24 +76,24 @@
               <p>Technologies</p>
               <div class="icon-container-t icon">
                 <div>
-                  {{#if data.nodejs_checked}}
+                  {{#if dataDetail.iconJs}}
                   <i class="fa-brands fa-node-js"><span class="text">Node Js</span></i>
                   {{/if}}
                 </div>
                 <div>
-                  {{#if data.python_checked}}
+                  {{#if dataDetail.iconPython}}
                   <i class="fa-brands fa-python"><span
                       class="text"
                     >Python</span></i>
                   {{/if}}
                 </div>
                 <div>
-                  {{#if data.php_checked}}
+                  {{#if dataDetail.iconPhp}}
                   <i class="fa-brands fa-php"><span class="text">PHP</span></i>
                   {{/if}}
                 </div>
                 <div>
-                  {{#if data.golang_checked}}
+                  {{#if dataDetail.iconGolang}}
                   <i class="fa-brands fa-golang"><span
                       class="text"
                     >Golang</span></i>
@@ -105,7 +105,7 @@
         </div>
         <div class="blog-detail-down">
           <p>
-             {{data.content}}
+             {{dataDetail.content}}
           </p>
         </div>
       </div>

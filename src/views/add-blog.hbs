@@ -129,31 +129,31 @@
               <div class="card-content">
                 <div class="container-content">
                   <a
-                    href="/blog-detail/{{@index}}"
+                    href="/blog-detail/{{this.id}}"
                     target="_blank"
                   >{{this.title}}</a>
                   <p>Duration : {{this.duration}}</p>
                   <div class="description">
                     <p>{{this.content}}</p>
-                    {{#if this.nodejs_checked}}
+                    {{#if this.iconJs}}
                       <i class="fa-brands fa-node"></i><span style="margin-right: 10px;"></span>
                     {{/if}}
-                    {{#if this.python_checked}}
+                    {{#if this.iconPython}}
                       <i class="fa-brands fa-python"></i><span style="margin-right: 10px;"></span>
                     {{/if}}
-                    {{#if this.php_checked}}
+                    {{#if this.iconPhp}}
                       <i class="fa-brands fa-php"></i><span style="margin-right: 10px;"></span>
                     {{/if}}
-                    {{#if this.golang_checked}}
+                    {{#if this.iconGolang }}
                       <i class="fa-brands fa-golang"></i><span style="margin-right: 10px;"></span>
                     {{/if}}
                   </div>
                   <div class="gabung-submit">
                     <div class="submit-project">
-                      <a href="/edit-blog/{{@index}}"><button>Edit</button></a>
+                      <a href="/edit-blog/{{this.id}}"><button>Edit</button></a>
                     </div>
                     <div class="submit-project">
-                      <a href="/delete/{{@index}}"><button>Delete</button></a>
+                      <a href="/delete/{{this.id}}"><button>Delete</button></a>
                     </div>
                   </div>
                 </div>
